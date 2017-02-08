@@ -34,7 +34,7 @@ class Finder
                 foreach ($obj->get_aliases() as $key => $val) {
                     foreach ($collection as $k => $v) {
                         if($v == $val) {
-                            $obj->set_is_in = true;
+                            $obj->set_is_in(true);
                             $obj->set_found_as($v);
                             break;
                         }

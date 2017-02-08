@@ -40,6 +40,12 @@ class ObjectToFind
      */
     private $found_as = '';
 
+    /**
+     * Data,ins this field, you can save any type of data
+     * @var string
+     */
+    private $data = '';
+
     function __construct($name, $aliases){
         $this->name = $name;
         $this->aliases = $aliases;
@@ -119,4 +125,23 @@ class ObjectToFind
     public function set_found_as($found_as){
         $this->found_as = $found_as;
     }
-}
+
+    /**
+    * Get the value of Data,ins this field, you can save any type of data
+    *
+    * @return string
+    */
+    public function get_data(){
+        return $this->data;
+    }
+
+    /**
+     * Set the value of Data,ins this field, you can save any type of data
+     *
+     * @param string data
+     */
+    public function set_data($data){
+        $this->data = $data;
+    }
+
+   }
